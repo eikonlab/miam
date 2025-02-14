@@ -1,0 +1,29 @@
+#menu-nav {
+  @apply hidden desktop:block;
+  &.open {
+    inset: 0;
+    padding: 4rem 1rem 1rem 1rem;
+    overflow: scroll;
+
+    @apply bg-gray fixed block;
+
+    ul {
+      flex-direction: column;
+    }
+
+    #close-menu-btn {
+      display: block;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 60px;
+    }
+  }
+
+  #close-menu-btn {
+    display: none;
+  }
+}
