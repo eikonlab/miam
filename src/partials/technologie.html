@@ -7,197 +7,242 @@
     ></div>
   </div>
 
-  <div class="col-span-12">
-    <div class="lg:grid grid-cols-6 gap-2.5 lg:w-1/2 w-3/4 accordion">
-      <div
-        class="h-full bg-[url('../img/kz_gallery-interface.jpg')] bg-cover hidden lg:block lg:col-span-2"
-      ></div>
-      <div class="lg:col-span-4 bg-yellow pt-2.5 px-2.5">
-        <div class="w-full flex justify-between items-center pb-2.5 label">
-          <button
-            class="bg-none border-none w-full text-left"
-            aria-expanded="false"
-            aria-controls="interface"
-          >
-            <h3 class="text-base uppercase font-semibold">Interface</h3>
-          </button>
-          <span class="arrow">↓</span>
-        </div>
-        <div class="content text-base" id="interface">
-          <p>
-            Le lieu utilise la technologie immersive AFC ( Audio Field Control )
-            développée par l’entreprise Japonaise YAMAHA depuis 40 ans.
-          </p>
-          <p>
-            La partie Image permet de pouvoir positionner et manipuler jusqu’a
-            128 objets sonores ou pistes dans l’espace 3D.
-          </p>
-          <p class="pb-2.5">
-            La partie Enhance offre à l auditeur un espace sonore dit augmenté ,
-            une réverbération spatiale extrêmement performante et
-            interchangeable selon le style de musique.Les performances en direct
-            sont rendues possibles grâce à un codage 3D adapté ainsi qu’un
-            puissant ordinateur.Sa flexibilité d’utilisation facilite la
-            création d’ un grand nombre de possibilités innovantes.
-          </p>
+  <div class="col-span-12 grid grid-cols-12 gap-x-2.5">
+    <div
+      class="col-span-4 relative w-full h-[350px] bg-concrete-texture"
+      id="imgs-accordion"
+    >
+      <img
+        src="./img/kz_gallery-interface.jpg?as=webp"
+        alt=""
+        id="kz_gallery-interface"
+        loading="lazy"
+        class="absolute inset-0 object-contain h-full opacity-0"
+      />
+      <img
+        src="./img/kz_gallery-hautparleur.jpg?as=webp"
+        alt=""
+        id="kz_gallery-hautparleur"
+        loading="lazy"
+        class="absolute inset-0 object-contain h-full opacity-0"
+      />
+      <img
+        src="./img/kz_gallery-proj-sonore.jpg?as=webp"
+        alt=""
+        id="kz_gallery-proj-sonore"
+        loading="lazy"
+        class="absolute inset-0 object-contain h-full opacity-0"
+      />
+      <img
+        src="./img/kz_gallery-amplification.jpg?as=webp"
+        alt=""
+        id="kz_gallery-amplification"
+        loading="lazy"
+        class="absolute inset-0 object-contain h-full opacity-0"
+      />
+      <img
+        src="./img/kz_gallery-plugins.jpg?as=webp"
+        alt=""
+        id="kz_gallery-plugins"
+        loading="lazy"
+        class="absolute inset-0 object-contain h-full opacity-0"
+      />
+      <img
+        src="./img/kz_gallery-logiciels.jpg?as=webp"
+        alt=""
+        id="kz_gallery-logiciels"
+        loading="lazy"
+        class="absolute inset-0 object-contain h-full opacity-0"
+      />
+    </div>
+
+    <div class="col-span-8">
+      <div class="flex">
+        <div class="w-1/6 lg:w-0" aria-hidden="true"></div>
+        <div class="lg:w-1/2 w-3/4 accordion">
+          <div class="bg-yellow pt-2.5 px-2.5">
+            <div class="w-full flex justify-between items-center pb-2.5 label">
+              <button
+                class="bg-none border-none w-full text-left"
+                aria-expanded="false"
+                aria-controls="interface"
+                data-img="kz_gallery-interface"
+              >
+                <h3 class="text-base uppercase font-semibold">Interface</h3>
+              </button>
+              <span class="arrow">↓</span>
+            </div>
+            <div class="content text-base" id="interface">
+              <p>
+                Le lieu utilise la technologie immersive AFC ( Audio Field
+                Control ) développée par l’entreprise Japonaise YAMAHA depuis 40
+                ans.
+              </p>
+              <p>
+                La partie Image permet de pouvoir positionner et manipuler
+                jusqu’a 128 objets sonores ou pistes dans l’espace 3D.
+              </p>
+              <p class="pb-2.5">
+                La partie Enhance offre à l auditeur un espace sonore dit
+                augmenté , une réverbération spatiale extrêmement performante et
+                interchangeable selon le style de musique.Les performances en
+                direct sont rendues possibles grâce à un codage 3D adapté ainsi
+                qu’un puissant ordinateur.Sa flexibilité d’utilisation facilite
+                la création d’ un grand nombre de possibilités innovantes.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-span-12 flex">
-    <div class="w-1/6 lg:w-1/4" aria-hidden="true"></div>
-    <div class="lg:grid grid-cols-6 gap-2.5 lg:w-1/2 w-3/4 accordion">
-      <div
-        class="hidden lg:block h-full bg-[url('../img/kz_gallery-hautparleur.jpg')] bg-cover col-span-2"
-      ></div>
-      <div class="col-span-4 bg-yellow pt-2.5 px-2.5">
-        <div class="w-full flex justify-between items-center pb-2.5 label">
-          <button
-            class="bg-none border-none w-full text-left"
-            aria-expanded="false"
-            aria-controls="haut-parlants"
-          >
-            <h3 class="text-base uppercase font-semibold">
-              Haut parlants parleurs
-            </h3>
-          </button>
-          <span class="arrow">↓</span>
-        </div>
-        <div class="content text-base" id="haut-parlants">
-          <p>↘ Marque NEXO</p>
-          <p>↘ 32 ID24</p>
-          <p>↘ 4 IDS 110</p>
-          <p class="pb-2.5">↘ 2 SUB BASS CD 18</p>
+      <div class="flex">
+        <div class="w-1/6 lg:w-1/5" aria-hidden="true"></div>
+        <div class="lg:w-1/2 w-3/4 accordion">
+          <div class="bg-yellow pt-2.5 px-2.5">
+            <div class="w-full flex justify-between items-center pb-2.5 label">
+              <button
+                class="bg-none border-none w-full text-left"
+                aria-expanded="false"
+                aria-controls="haut-parlants"
+                data-img="kz_gallery-hautparleur"
+              >
+                <h3 class="text-base uppercase font-semibold">
+                  Haut parlants parleurs
+                </h3>
+              </button>
+              <span class="arrow">↓</span>
+            </div>
+            <div class="content text-base" id="haut-parlants">
+              <p>↘ Marque NEXO</p>
+              <p>↘ 32 ID24</p>
+              <p>↘ 4 IDS 110</p>
+              <p class="pb-2.5">↘ 2 SUB BASS CD 18</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-span-12 flex">
-    <div class="w-1/4 lg:w-1/4" aria-hidden="true"></div>
-    <div class="lg:grid grid-cols-6 gap-2.5 lg:w-1/2 w-3/4 accordion">
-      <div
-        class="hidden lg:block h-full bg-[url('../img/kz_gallery-proj-sonore.jpg')] bg-cover col-span-2"
-      ></div>
-      <div class="col-span-4 bg-yellow pt-2.5 px-2.5">
-        <div class="w-full flex justify-between items-center pb-2.5 label">
-          <button
-            class="bg-none border-none w-full text-left"
-            aria-expanded="false"
-            aria-controls="projection-sonore"
-          >
-            <h3 class="text-base uppercase font-semibold">Projection sonore</h3>
-          </button>
-          <span class="arrow">↓</span>
-        </div>
-        <div class="content text-base" id="projection-sonore">
-          <p>
-            32 hauts parleurs pour s’adapter à un grand nombre de possibilités.
-          </p>
-          <p>
-            La distribution périphérique en 2 couronnes de 12 hauts parleurs
-            permet de diffuser un grand nombre d’ images sonores 3D utilisées
-            aujourd’hui de par le monde (cf.
-            <a href="#glossaire">Glossaire</a>).
-          </p>
-          <p>
-            8 points de diffusions supplémentaires peuvent être disposés au
-            plafond , au sol ou en couronne intérieure selon les besoins.
-          </p>
-          <p class="pb-2.5">
-            En collaboration avec le Lautsprecher Orchester Freiburg , il est
-            prévu de pouvoir installer jusqu’a 64 hauts parleurs de manière
-            occasionnelle.
-          </p>
+      <div class="flex">
+        <div class="w-1/4 lg:w-1/5" aria-hidden="true"></div>
+        <div class="lg:w-1/2 w-3/4 accordion">
+          <div class="bg-yellow pt-2.5 px-2.5">
+            <div class="w-full flex justify-between items-center pb-2.5 label">
+              <button
+                class="bg-none border-none w-full text-left"
+                aria-expanded="false"
+                aria-controls="projection-sonore"
+                data-img="kz_gallery-proj-sonore"
+              >
+                <h3 class="text-base uppercase font-semibold">
+                  Projection sonore
+                </h3>
+              </button>
+              <span class="arrow">↓</span>
+            </div>
+            <div class="content text-base" id="projection-sonore">
+              <p>
+                32 hauts parleurs pour s’adapter à un grand nombre de
+                possibilités.
+              </p>
+              <p>
+                La distribution périphérique en 2 couronnes de 12 hauts parleurs
+                permet de diffuser un grand nombre d’ images sonores 3D
+                utilisées aujourd’hui de par le monde (cf.
+                <a href="#glossaire">Glossaire</a>).
+              </p>
+              <p>
+                8 points de diffusions supplémentaires peuvent être disposés au
+                plafond , au sol ou en couronne intérieure selon les besoins.
+              </p>
+              <p class="pb-2.5">
+                En collaboration avec le Lautsprecher Orchester Freiburg , il
+                est prévu de pouvoir installer jusqu’a 64 hauts parleurs de
+                manière occasionnelle.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-span-12 flex">
-    <div class="w-1/4 lg:w-1/4" aria-hidden="true"></div>
-    <div class="lg:grid grid-cols-6 gap-2.5 lg:w-1/2 w-3/4 accordion">
-      <div
-        class="hidden lg:block h-full bg-[url('../img/kz_gallery-amplification.jpg')] bg-cover col-span-2"
-      ></div>
-      <div class="col-span-4 bg-yellow pt-2.5 px-2.5">
-        <div class="w-full flex justify-between items-center pb-2.5 label">
-          <button
-            class="bg-none border-none w-full text-left"
-            aria-expanded="false"
-            aria-controls="amplification"
-          >
-            <h3 class="text-base uppercase font-semibold">Amplification</h3>
-          </button>
-          <span class="arrow">↓</span>
-        </div>
-        <div class="content text-base" id="amplification">
-          <p>↘ 32 CANAUX 300W YAMAHA EQUIPE DANTE</p>
-          <p>↘ 4 CANAUX 500W YAMAHA EQUIPE DANTE</p>
-          <p class="pb-2.5">↘ 4 CANAUX 500 W CAMCO</p>
+      <div class="flex">
+        <div class="w-1/4 lg:w-1/5" aria-hidden="true"></div>
+        <div class="lg:w-1/2 w-3/4 accordion">
+          <div class="bg-yellow pt-2.5 px-2.5">
+            <div class="w-full flex justify-between items-center pb-2.5 label">
+              <button
+                class="bg-none border-none w-full text-left"
+                aria-expanded="false"
+                aria-controls="amplification"
+                data-img="kz_gallery-amplification"
+              >
+                <h3 class="text-base uppercase font-semibold">Amplification</h3>
+              </button>
+              <span class="arrow">↓</span>
+            </div>
+            <div class="content text-base" id="amplification">
+              <p>↘ 32 CANAUX 300W YAMAHA EQUIPE DANTE</p>
+              <p>↘ 4 CANAUX 500W YAMAHA EQUIPE DANTE</p>
+              <p class="pb-2.5">↘ 4 CANAUX 500 W CAMCO</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-span-12 flex">
-    <div class="w-0 lg:w-1/2" aria-hidden="true"></div>
-    <div class="lg:grid grid-cols-6 gap-2.5 lg:w-1/2 w-3/4 accordion">
-      <div
-        class="hidden lg:block h-full bg-[url('../img/kz_gallery-plugins.jpg')] bg-cover col-span-2"
-      ></div>
-      <div class="col-span-4 bg-yellow pt-2.5 px-2.5">
-        <div class="w-full flex justify-between items-center pb-2.5 label">
-          <button
-            class="bg-none border-none w-full text-left"
-            aria-expanded="false"
-            aria-controls="plug-ins"
-          >
-            <h3 class="text-base uppercase font-semibold">Plug ins</h3>
-          </button>
-          <span class="arrow">↓</span>
-        </div>
-        <div class="content text-base" id="plug-ins">
-          <p>↘ Flux audio</p>
-          <p>↘ Acousmodules</p>
-          <p>↘ GRM</p>
-          <p>↘ Tools</p>
-          <p>↘ Usine</p>
-          <p>↘ SoundToys</p>
-          <p>↘ Native Instrument</p>
-          <p>↘ Arturia</p>
-          <p class="pb-2.5">↘ Dante Virtual Sound Card</p>
+      <div class="flex">
+        <div class="w-0 lg:w-2/5" aria-hidden="true"></div>
+        <div class="lg:w-1/2 w-3/4 accordion">
+          <div class="bg-yellow pt-2.5 px-2.5">
+            <div class="w-full flex justify-between items-center pb-2.5 label">
+              <button
+                class="bg-none border-none w-full text-left"
+                aria-expanded="false"
+                aria-controls="plug-ins"
+                data-img="kz_gallery-plugins"
+              >
+                <h3 class="text-base uppercase font-semibold">Plug ins</h3>
+              </button>
+              <span class="arrow">↓</span>
+            </div>
+            <div class="content text-base" id="plug-ins">
+              <p>↘ Flux audio</p>
+              <p>↘ Acousmodules</p>
+              <p>↘ GRM</p>
+              <p>↘ Tools</p>
+              <p>↘ Usine</p>
+              <p>↘ SoundToys</p>
+              <p>↘ Native Instrument</p>
+              <p>↘ Arturia</p>
+              <p class="pb-2.5">↘ Dante Virtual Sound Card</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-span-12 flex">
-    <div class="w-1/6 lg:w-1/2" aria-hidden="true"></div>
-    <div class="lg:grid grid-cols-6 gap-2.5 lg:w-1/2 w-3/4 accordion">
-      <div
-        class="hidden lg:block h-full bg-[url('../img/kz_gallery-logiciels.jpg')] bg-cover col-span-2"
-      ></div>
-      <div class="col-span-4 bg-yellow pt-2.5 px-2.5">
-        <div class="w-full flex justify-between items-center pb-2.5 label">
-          <button
-            class="bg-none border-none w-full text-left"
-            aria-expanded="false"
-            aria-controls="logiciels"
-          >
-            <h3 class="text-base uppercase font-semibold">Logiciels</h3>
-          </button>
-          <span class="arrow">↓</span>
-        </div>
-        <div class="content text-base" id="logiciels">
-          <p>↘ Nuendo</p>
-          <p>↘ AFC Image</p>
-          <p>↘ Repear</p>
-          <p>↘ Ableton</p>
-          <p>↘ Spat Revolutions</p>
-          <p>↘ Sound Trajectory</p>
-          <p class="pb-2.5">↘ Usine</p>
+      <div class="flex">
+        <div class="w-1/6 lg:w-2/5" aria-hidden="true"></div>
+        <div class="lg:w-1/2 w-3/4 accordion">
+          <div class="bg-yellow pt-2.5 px-2.5">
+            <div class="w-full flex justify-between items-center pb-2.5 label">
+              <button
+                class="bg-none border-none w-full text-left"
+                aria-expanded="false"
+                aria-controls="logiciels"
+                data-img="kz_gallery-logiciels"
+              >
+                <h3 class="text-base uppercase font-semibold">Logiciels</h3>
+              </button>
+              <span class="arrow">↓</span>
+            </div>
+            <div class="content text-base" id="logiciels">
+              <p>↘ Nuendo</p>
+              <p>↘ AFC Image</p>
+              <p>↘ Repear</p>
+              <p>↘ Ableton</p>
+              <p>↘ Spat Revolutions</p>
+              <p>↘ Sound Trajectory</p>
+              <p class="pb-2.5">↘ Usine</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

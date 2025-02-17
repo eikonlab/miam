@@ -41,7 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ajoute un écouteur d'événement sur le bouton de l'accordion
     accordionBtn.addEventListener("click", function () {
       const isExpanded = accordionBtn.getAttribute("aria-expanded") == "true";
-      console.log(isExpanded);
+      const imgAccordionId = accordionBtn.getAttribute("data-img");
+      const imgAccordion = imgAccordionId
+        ? document.getElementById(imgAccordionId)
+        : null;
+
       // Si le contenu de l'accordéon a la class "open", ça veut dire qu'au click, on veut refermer l'accordéon (-> mettre sa height à 0)
       if (accordionContent.classList.contains("open")) {
         gsap.to(accordionContent, {
@@ -51,6 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.to(accordionArrow, {
           rotate: 0,
           duration: 0.2,
+        });
+        gsap.to(imgAccordion, {
+          opacity: 0,
+          duration: 0.5,
         });
         // Sinon, on veut voir le contenu
       } else {
@@ -62,10 +70,23 @@ document.addEventListener("DOMContentLoaded", () => {
           rotate: 180,
           duration: 0.2,
         });
+        gsap.to(imgAccordion, {
+          opacity: 1,
+          duration: 0.5,
+        });
       }
       // On vient ensuite ajouter la class open à l'accordéon
       accordionContent.classList.toggle("open");
       accordionBtn.setAttribute("aria-expanded", !isExpanded);
+      // if (imgAccordion) {
+      //   const imgs = document.querySelectorAll("#imgs-accordion img");
+      //   imgs.forEach((img) => {
+      //     img.classList.add("hidden");
+      //   });
+      //   if (!isExpanded) {
+      //     document.querySelector(`#${imgAccordion}`).classList.remove("hidden");
+      //   }
+      // }
     });
   });
 
