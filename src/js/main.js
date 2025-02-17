@@ -78,15 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // On vient ensuite ajouter la class open à l'accordéon
       accordionContent.classList.toggle("open");
       accordionBtn.setAttribute("aria-expanded", !isExpanded);
-      // if (imgAccordion) {
-      //   const imgs = document.querySelectorAll("#imgs-accordion img");
-      //   imgs.forEach((img) => {
-      //     img.classList.add("hidden");
-      //   });
-      //   if (!isExpanded) {
-      //     document.querySelector(`#${imgAccordion}`).classList.remove("hidden");
-      //   }
-      // }
     });
   });
 
