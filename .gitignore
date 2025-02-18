@@ -1,4 +1,8 @@
 node_modules
 dist
-src/img
 .parcel-cache
+.DS_Store
+src/.DS_Store
+
+src/img/*
+!src/img/concrete.webp

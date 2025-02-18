@@ -24,7 +24,7 @@ module.exports = {
       },
     },
     backgroundImage: {
-      "concrete-texture": "url('../img/gray-tex.webp')",
+      "concrete-texture": "url('../img/concrete.webp')",
     },
   },
   plugins: [],
