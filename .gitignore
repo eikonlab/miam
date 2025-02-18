@@ -1,4 +1,7 @@
 node_modules
 dist
-src/img
 .parcel-cache
+.DS_Store
+src/.DS_Store
+
+src/img/kzern.webm

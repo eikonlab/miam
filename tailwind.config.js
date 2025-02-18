@@ -22,9 +22,12 @@ module.exports = {
       screens: {
         desktop: "1300px",
       },
+      backgroundPosition: {
+        random: `${Math.random() * 100}% ${Math.random() * 100}%`,
+      },
     },
     backgroundImage: {
-      "concrete-texture": "url('../img/gray-tex.webp')",
+      "concrete-texture": "url('../img/concrete.webp')",
     },
   },
   plugins: [],
