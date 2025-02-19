@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Masonry from "masonry-layout";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,5 +102,13 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.to(".square-anim", {
     width: "100%",
     duration: 2.5,
+  });
+
+  // Masonry
+  const elem = document.querySelector(".masonry");
+  const msnry = new Masonry(elem, {
+    // options
+    itemSelector: ".masonry-item",
+    gutter: 16,
   });
 });
