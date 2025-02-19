@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Masonry from "masonry-layout";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,6 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const imgAccordion = imgAccordionId
         ? document.getElementById(imgAccordionId)
         : null;
+      const imgAccordions = document.querySelectorAll(
+        "#imgs-accordion img:not(#" + imgAccordionId + ")"
+      );
+      imgAccordions.forEach((img) => {
+        img.style.opacity = 0;
+      });
 
       // Si le contenu de l'accordéon a la class "open", ça veut dire qu'au click, on veut refermer l'accordéon (-> mettre sa height à 0)
       if (accordionContent.classList.contains("open")) {
@@ -95,5 +102,13 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.to(".square-anim", {
     width: "100%",
     duration: 2.5,
+  });
+
+  // Masonry
+  const elem = document.querySelector(".masonry");
+  const msnry = new Masonry(elem, {
+    // options
+    itemSelector: ".masonry-item",
+    gutter: 16,
   });
 });
