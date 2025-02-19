@@ -45,6 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const imgAccordion = imgAccordionId
         ? document.getElementById(imgAccordionId)
         : null;
+      const imgAccordions = document.querySelectorAll(
+        "#imgs-accordion img:not(#" + imgAccordionId + ")"
+      );
+      imgAccordions.forEach((img) => {
+        img.style.opacity = 0;
+      });
 
       // Si le contenu de l'accordéon a la class "open", ça veut dire qu'au click, on veut refermer l'accordéon (-> mettre sa height à 0)
       if (accordionContent.classList.contains("open")) {
