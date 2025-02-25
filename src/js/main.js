@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     menuItem.addEventListener("click", closeMenu);
   });
 
+  // Video loader fixer
+  const video = document.querySelector("#video");
+  video.play();
+
   // ACCORDION JS
   // Sélectionne chaque accordéon sur la page HTML
   const accordions = document.querySelectorAll(".accordion");

@@ -4,4 +4,5 @@ dist
 .DS_Store
 src/.DS_Store
 
+src/img/*.webp
 src/img/kzern.webm
