@@ -4,5 +4,8 @@ dist
 .DS_Store
 src/.DS_Store
 
+<<<<<<< HEAD
 src/img/*.webp
 src/img/kzern.webm
+=======
+>>>>>>> 028168a37af10eb16e37ec9c5e3cf44054cbf97a
