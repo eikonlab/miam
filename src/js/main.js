@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Video loader fixer
-  const video = document.querySelector("#video");
+  const video = document.querySelector("video");
   video.play();
 
   // ACCORDION JS
