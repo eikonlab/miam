@@ -29,8 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Video loader fixer
-  const video = document.querySelector("video");
-  video.play();
+  setTimeout(() => {
+    const video = document.querySelector("video");
+    video.play();
+  }, 3000);
 
   // ACCORDION JS
   // Sélectionne chaque accordéon sur la page HTML
