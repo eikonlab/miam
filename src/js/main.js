@@ -115,6 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const msnry = new Masonry(elem, {
     // options
     itemSelector: ".masonry-item",
-    gutter: 16,
+    gutter: 10,
   });
 });
