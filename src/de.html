@@ -40,17 +40,17 @@
     <link rel="alternate" hreflang="fr" href="https://kzern.com/" />
     <link rel="alternate" hreflang="de" href="https://kzern.com/de" />
   </head>
-  <body class="bg-gray">
+  <body class="bg-gray/80">
     <div class="container">
       <header class="grid grid-cols-12 gap-2.5">
         <div
           aria-hidden="true"
-          class="bg-concrete-texture bg-cover desktop:col-span-5 col-span-6 h-[380px]"
+          class="bg-concrete-texture bg-cover bg-left-bottom desktop:col-span-5 col-span-6 h-[380px]"
         ></div>
         <div class="h-full desktop:col-span-7 col-span-6 flex flex-col">
           <div
             aria-hidden="true"
-            class="bg-concrete-texture bg-cover flex-1 ml-[-0.625rem] desktop:ml-0 w-[calc(100%+0.625rem)] desktop:w-full"
+            class="bg-concrete-texture bg-cover bg-right-top flex-1 ml-[-0.625rem] desktop:ml-0 w-[calc(100%+0.625rem)] desktop:w-full"
           ></div>
           <div class="flex justify-end desktop:hidden mt-2.5 desktop:mt-0">
             <button
@@ -151,7 +151,7 @@
           </nav>
         </div>
         <h1 class="col-span-12">
-          <img src="img/LogoKzern.svg" alt="Logo von Kzern" loading="eager" />
+          <img src="img/LogoKzern.svg" alt="Logo von Kzern" />
         </h1>
         <div class="col-span-12 flex gap-2.5 items-center">
           <p
@@ -194,10 +194,7 @@
       </header>
 
       <main class="mt-1 lg:mt-2.5">
-        <div
-          aria-hidden="true"
-          class="bg-concrete-texture bg-cover w-full lg:h-[404px] h-[202px]"
-        ></div>
+        <include src="./partials/video.html"> </include>
 
         <include src="./partials/de/espace.html"></include>
 
@@ -211,11 +208,18 @@
 
         <section class="grid grid-cols-12 gap-2.5 my-20 md:my-[120px]">
           <div
-            class="col-span-2 md:col-span-5 bg-concrete-texture"
+            class="col-span-2 md:col-span-5 bg-concrete-texture bg-cover"
             aria-hidden="true"
           ></div>
           <div class="col-span-10 md:col-span-7 bg-yellow p-2.5">
             <h2 class="heading-3">Ab September 2025 : Start der 1. Saison</h2>
+          </div>
+          <div class="col-span-12">
+            <img
+              src="./img/kz_gallery-footer.jpg?as=webp&width=2000"
+              loading="lazy"
+              alt=""
+            />
           </div>
         </section>
       </main>
@@ -235,7 +239,7 @@
             <p>Av. du Général-Guisan 25, 1700 Fribourg</p>
           </div>
           <div class="text-base">
-            <a href="tel:+417945565578">+41 79 45 56 55 78</a>
+            <a href="tel:+41787840503">+41 78 784 05 03</a>
           </div>
         </div>
         <div
