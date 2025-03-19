@@ -117,4 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
     itemSelector: ".masonry-item",
     gutter: 10,
   });
+
+  setTimeout(() => {
+    msnry.layout();
+  }, 2000);
 });
